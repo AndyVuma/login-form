@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-tAX0HPh+q/MaP5G67/0/0DYRzf+DpBFD+cXm5p5o5OzS79XX+pOf2SyxjEgeJfiqw34+4Fovt5MLX9FgsfK5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <section class="portal">
+        <form action="#" class="p-4 rounded shadow">
+            <div class="title mb-4 text-center">
+                <h1>LOG IN</h1>
+                <p>Welcome back! Please enter your details.</p>
+            </div>
+            <button id="google-signin" class="btn btn-outline-dark w-100 mb-3">
+                <img src="assets/google-logo.svg" alt="" width="24">
+                Log in with Google
+            </button>
+            <span class="d-flex align-items-center mb-3">
+                <hr class="flex-grow-1 mr-3">
+                <span class="text-secondary">or</span>
+                <hr class="flex-grow-1 ml-3">
+            </span>
+            <div class="input-field mb-3">
+                <input type="text" id="username" placeholder=" ">
+                <label for="username">Username</label>
+            </div>
+            <div class="input-field mb-3">
+                <input type="password" id="password" placeholder=" ">
+                <label for="password">Password</label>
+                <img id="show-hide-pass" src="assets/show-eye.svg" alt="">
+            </div>
+            <a href="#" id="forgot-pass" class="d-block text-end mb-3">Forgot Password</a>
+            <button id="signin" class="btn btn-primary w-100 mb-3">Sign in</button>
+            <p id="signup" class="text-center">
+                Don't have an account?
+                <a href="sign-up.html" class="text-primary">Sign up here</a>
+            </p>
+        </form>
+    </section>
+
+    <!-- Bootstrap Bundle with JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-Sfv4L2JwEeRvdAl/GS/5GM/WEcikYY3qXVgWZD/XJZM59OqEC3qBkpe+JrYrYrYrP2GgwRd0veQZoG7h0b0+mg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

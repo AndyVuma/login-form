@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary:#157AFE;
+    --secondary:#808080;
+    --bg-light:#fff;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: #fafafa;
+}
+
+.portal{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.portal form{
+    background: var(--bg-light);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: min(100%, 470px);
+    padding: 70px;
+    display: grid;
+    gap: 1rem;
+    border-radius: 10px;
+}
+
+.title h1{
+    font-size: 2rem;
+    position: relative;
+    padding-left: 25px;
+}
+
+.title h1::before, .title h1::after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: var(--primary);
+    left: 0;
+    top: 12px;
+    border-radius: 50%;
+}
+
+.title h1::after{
+    animation: pulse 1.3s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
+
+.title p{
+    color: var(--secondary);
+    font-size: .9rem;
+}
+
+input, button{
+    font: inherit;
+    border: 2px solid transparent;
+    outline: 2px solid transparent;
+    border-radius: 5px;
+}
+
+#google-signin{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, 
+            rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    cursor: pointer;
+}
+
+span{
+    color: var(--secondary);
+    display: flex;
+}
+
+span::before, span::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: var(--secondary);
+    margin: auto;
+}
+
+span::before{
+    margin-right: 1rem;
+}
+
+span::after{
+    margin-left: 1rem;
+}
+
+.input-field{
+    position: relative;
+}
+
+.input-field input{
+    background: #eeeeee;
+    padding: 23px 15px 7px;
+    width: 100%;
+    transition: .3s ease;
+}
+
+.input-field label{
+    position: absolute;
+    color: var(--secondary);
+    left: 15px;
+    top: 16px;
+    transition: .3s ease;
+}
+
+.input-field input:focus ~ label, .input-field input:not(:placeholder-shown) ~ label{
+    top: -10px;
+    font-size: 14px;
+    color: var(--primary);
+}
+
+#show-hide-pass{
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    cursor: pointer;
+}
+
+#signup {
+    background: var(--primary);
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+.signup-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .signup-form input[type="text"],
+  .signup-form input[type="email"],
+  .signup-form input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form button[type="submit"] {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .signup-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
